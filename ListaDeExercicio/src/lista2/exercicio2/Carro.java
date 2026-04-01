@@ -26,26 +26,35 @@ public class Carro {
 		System.out.println("O " + modelo + " está desligando!");
 		partidaCarro = false;
 		}
-		else{
-			System.out.println("O " + " já está desligado");
+		else if(partidaCarro == true && velocidadeCarro > 0){
+			System.out.println("O " + modelo + " ainda está em movimento!");
+		}
+		else {
+			System.out.println("O " + modelo + " já está parado");
 		}
 	}
-	public void frear() {
-		if(velocidadeCarro > 0 && partidaCarro == true) {
-		velocidadeCarro = velocidadeCarro - 10;
+	public void frear(int x) {
+		if(x <= velocidadeCarro && partidaCarro == true) {
+		velocidadeCarro = velocidadeCarro - x;
 		System.out.println("O " + modelo + " está freando, sua velocidade é agora de " + velocidadeCarro + "KM/h");
 		}
-		else {
+		else if(partidaCarro == false){
 			System.out.println("O " + modelo + " está parado!");
 		}
+		else {
+			System.out.println("Velocidade de frenagem imcompátivel!");
+		}
 	}
-	public void acelerar() {
-		if (partidaCarro == true){
-			velocidadeCarro = velocidadeCarro + 10;
+	public void acelerar(int y) {
+		if (partidaCarro == true && velocidadeCarro + y <= 220){
+			velocidadeCarro = velocidadeCarro + y;
 			System.out.println("O " + modelo + " está acelerando, sua velocidade é agora de " + velocidadeCarro + "KM/h");
 		}
-		else {
+		else if(partidaCarro == false){
 			System.out.println("O " + modelo + " está desligado!");
+		}
+		else {
+			System.out.println("Velocidade imcompátivel com o carro!");
 		}
 
 	}

@@ -32,10 +32,11 @@ public class CarroTeste {
 		carro3.placa = "MNO-5D78";
 		
 		carro1.ligar();
-		carro1.acelerar();
-		carro1.frear();
+		carro1.acelerar(140);
+		carro1.frear(40);
+		carro1.frear(90);
 		carro1.desligar();
-		carro1.acelerar();
+		carro1.acelerar(220);
 		
 		carro2.ligar();
 		carro2.desligar();

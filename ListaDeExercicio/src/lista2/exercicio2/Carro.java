@@ -54,7 +54,7 @@ public class Carro {
 			System.out.println("O " + modelo + " está desligado!");
 		}
 		else {
-			System.out.println("Velocidade imcompátivel com o carro!");
+			System.out.println("Velocidade imcompátivel com o " + modelo +"!");
 		}
 
 	}

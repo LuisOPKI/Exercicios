@@ -3,30 +3,30 @@ package lista2.exercicio3;
 public class PessoaTeste {
 	public static void main(String[] args) {
 		
-		Pessoa pessoa1 = new Pessoa();
-		Pessoa pessoa2 = new Pessoa();
-		Pessoa pessoa3 = new Pessoa();
+		Pessoa pessoa1 = new Pessoa("Rodrigo Garro", "Masculino", "111.222.333-44", 28, 1.74, 72.5);
+		System.out.println(pessoa1.nome);
+		System.out.println(pessoa1.sexo);
+		System.out.println(pessoa1.cpf);
+		System.out.println(pessoa1.idade);
+		System.out.println(pessoa1.altura);
+		System.out.println(pessoa1.peso);
 		
-		pessoa1.nome = "Rodrigo Garro";
-		pessoa1.sexo = "Masculino";
-		pessoa1.cpf = "111.222.333-44"; 
-		pessoa1.idade = 28;
-		pessoa1.altura = 1.74;
-		pessoa1.peso = 72.5;
-
-		pessoa2.nome = "Memphis Depay";
-		pessoa2.sexo = "Masculino";
-		pessoa2.cpf = "555.666.777-88"; 
-		pessoa2.idade = 32;
-		pessoa2.altura = 1.76;
-		pessoa2.peso = 78.0;
-
-		pessoa3.nome = "Yuri Alberto";
-		pessoa3.sexo = "Masculino";
-		pessoa3.cpf = "999.000.111-22"; 
-		pessoa3.idade = 25;
-		pessoa3.altura = 1.82;
-		pessoa3.peso = 78.0;
+		Pessoa pessoa2 = new Pessoa("Memphis Depay", "Masculino", "555.666.777-88", 32, 1.76, 78.0);
+		System.out.println(pessoa2.nome);
+		System.out.println(pessoa2.sexo);
+		System.out.println(pessoa2.cpf);
+		System.out.println(pessoa2.idade);
+		System.out.println(pessoa2.altura);
+		System.out.println(pessoa2.peso);
+		
+		Pessoa pessoa3 = new Pessoa("Yuri Alberto", "Masculino", "999.000.111-22", 25, 1.82, 78.0);
+		
+		System.out.println(pessoa3.nome);
+		System.out.println(pessoa3.sexo);
+		System.out.println(pessoa3.cpf);
+		System.out.println(pessoa3.idade);
+		System.out.println(pessoa3.altura);
+		System.out.println(pessoa3.peso);
 		
 		pessoa1.andar();
 		pessoa2.correr();
